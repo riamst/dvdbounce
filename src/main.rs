@@ -36,7 +36,7 @@ impl Neg for Vector {
 
 fn main() {
     let mut pos = Vector(0 as f32, 0 as f32);
-    let mut vel = Vector(0.5 as f32, 0.25 as f32);
+    let mut vel = Vector(0.5, 0.25);
     loop {
         pos = pos + vel;
         if pos.0 >= (WIDTH - 11) as f32 || pos.0 <= 0. {
